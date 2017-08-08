@@ -1,0 +1,14 @@
+@{
+  Layout = "_Layout";
+}
+<div class="jumbotron">
+  <h1>YOU ARE ALLERGIC TO:</h1>
+</div>
+
+<ul>
+  @foreach(var allergy in Model)
+  {
+    <li>@allergy</li>
+  }
+</ul>
+<a href="/"><button type="button" name="button">Go home</button></a>
